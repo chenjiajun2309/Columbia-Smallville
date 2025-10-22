@@ -114,10 +114,106 @@ python training/train_disc.py --algo gail     # or --algo drail
 - **Individual-level**: schedule adherence, task latency, memory-reference rate, courtesy/cooperation score.
 - **A/B Baselines**: Base vs +BC/Offline RL vs +Online RL vs +Discriminator (DRAIL).
 
-## 🛠️ Team Roles (Example)
-- **A — Systems & Backend**: simulation core, tool executor, API, visualization, DB/pgvector.
-- **B — Cognition & Prompts**: memory/retrieval/reflection, ReAct, personas & social layer, class/event generators.
-- **C — Training & Discriminator**: synthetic demos, LoRA/BC/Offline RL, online RL (PPO), GAIL/DRAIL.
+## 👥 Team & Responsibilities
+
+| Member | UNI | Role | Primary Responsibilities |
+|-------|-----|------|--------------------------|
+| **Jiajun Chen** | **jc6397** | **Frontend Visualization Lead** | 2D/3D campus UI, control panels, real-time views, agent inspectors, performance & UX |
+| **Haiyu Wei** | **hw3036** | **Backend & Systems Lead** | Simulation core API, state & event services, storage/queues, WebSocket infra, ops |
+| **Jianfeng Chen** | **jc6175** | **RL & Training Lead** | Datasets & expert demos, LoRA/BC/Offline RL/Online RL, discriminator rewards (GAIL/DRAIL), evaluation |
+
+---
+
+## 🧰 Tech Stack Recommendations
+
+### Frontend Visualization (Owner: **Jiajun Chen / jc6397**)
+- **Rendering:** **Three.js** or **PixiJS** (2D/3D scene; start with PixiJS for performance & simplicity, upgrade to Three.js if you need 3D/lighting).
+- **Framework:** **React** (recommended) or Vue.js for the dashboard, agent inspector, timelines, heatmaps.
+- **Realtime:** **WebSocket** for live state streaming (positions, events, chat bubbles), with fallback SSE for logs.
+- **Canvas API:** Use for lightweight overlays (selection rects, path hints, mini-map) and screenshots/thumbnails.
+- **UI details:** Virtualized lists for logs; memoized selectors; FPS & net latency indicators; Ctrl-P “Command Palette”.
+
+**Frontend deliverables**
+- `MapView` (grid/tile or navmesh), `AgentAvatar` (status badges), `EventStream`, `SocialGraph`, `DiaryPanel`.
+- Dev tools: pause/resume sim, time warp, step-through tick, event filtering.
+
+---
+
+### Backend Architecture (Owner: **Haiyu Wei / hw3036**)
+> Python-first, typed, testable, with clear boundaries between simulation core and I/O.
+
+- **Core Framework:** **FastAPI** (async, OpenAPI docs). Flask is acceptable for prototypes; prefer FastAPI for concurrency.
+- **Realtime:** **WebSocket server** (FastAPI `websockets` or `Socket.IO`) for streaming world state & chat.
+- **Caching/Queues:** **Redis** for pub/sub, ephemeral state snapshots, event fan-out, background jobs.
+- **Storage:**  
+  - **PostgreSQL** (+ `pgvector`) for memories, trajectories, interactions, and analytics.  
+  - (Optional) **MongoDB** for schemaless logs if you prefer document storage.
+- **Auth/Config:** Env-based config (`pydantic-settings`), API keys/roles for admin vs. viewer.
+- **Testing:** `pytest`, `httpx` for API tests; integration tests with ephemeral Postgres & Redis via Docker.
+
+**Backend deliverables**
+- `/api/world` (tick, reset, snapshot), `/api/agents` (CRUD, personas), `/api/events` (query/replay), `/ws/stream` (live).
+- Schema for `memories`, `events`, `interactions`, `trajectories`; ETL scripts for analytics & RL datasets.
+
+---
+
+### Agent Cognition & Memory (Owner: **Shared**, interface by **Haiyu**, prompts by **Jiajun**)
+- **Agent framework:** **LangChain** (tooling & memory chains). AutoGPT-style loops only where necessary; prefer explicit ReAct.
+- **LLM Brain:** **OpenAI API** (e.g., GPT-4 family) for reasoning, reflection, planning, and dialog generation.
+- **Vector Store:** **ChromaDB** (local, fast) or **Pinecone** (managed, scalable) to store embeddings for episodic/social memories.
+- **Design:** Three-factor retrieval (relevance, importance, recency); periodic reflection to compress context; tool-validated actions.
+
+---
+
+### RL & Training (Owner: **Jianfeng Chen / jc6175**)
+- **RL libraries:**  
+  - **Stable-Baselines3** for PPO/SAC baselines (fast iteration).  
+  - **Ray / RLlib** for parallel training and large-scale experiments.
+- **DL base:** **PyTorch** (mandatory).
+- **Small-model fine-tuning:**  
+  - **Hugging Face Transformers**, **LoRA / QLoRA** for efficient policy heads.  
+  - Suggested base LMs: **LLaMA-7B**, **Mistral-7B**, **Phi-2** (pick one for initial BC; gate with tokenizer size/VRAM).
+- **Pipelines:**  
+  - **Behavior Cloning (BC)** from synthetic “expert demos”.  
+  - **Offline RL** (IQL/CQL) to stabilize out-of-distribution actions.  
+  - **Online RL** (PPO) in the PettingZoo/Gymnasium adapter.  
+  - **Discriminator rewards**: GAIL `log(D) - log(1-D)`; optional **DRAIL** diffusion discriminator for smoother shaping.
+
+**RL deliverables**
+- `datasets/experts.parquet` (scripted via LLM generation + heuristics).  
+- `train_bc_lora.py`, `train_iql.py`, `train_ppo.py`, `train_disc.py` (gail|drail).  
+- Eval suite: norm-violation ↓, attendance ↑, task latency ↓, memory-reference rate ↑.
+
+---
+
+## 🔗 Ownership Map (Who touches what)
+
+- **jc6397 (Frontend)**: `/frontend`, `/agents/prompts` (UI text), `/scripts/replay_viewer.py`.
+- **hw3036 (Backend)**: `/api`, `/sim-core`, `/storage`, `/ws`, `/scripts/bootstrap_world.py`.
+- **jc6175 (RL)**: `/training`, `/datasets`, `/sim-core/adapters/pettingzoo.py`, eval notebooks in `/docs/evals`.
+
+---
+
+## ✅ Milestones
+
+1. **MVP Visualization (jc6397)** — Live map with 10 agents, event stream, agent inspector, pause/step.  
+2. **Stable Backend (hw3036)** — FastAPI + WS, Postgres + pgvector, Redis pub/sub, replay endpoints.  
+3. **Policy Head v0 (jc6175)** — BC on punctuality/queueing; show reduced norm violations vs. baseline.  
+4. **Offline RL (jc6175)** — IQL/CQL improvements; ablation charts & logs.  
+5. **Social Emergence (shared)** — Invitations/RSVP diffusion + daily diaries; campus heatmaps.  
+6. **DRAIL Option (jc6175)** — Switchable diffusion discriminator; smoother rewards; stability report.
+
+---
+
+## 📝 Notes & Tips
+
+- Start with **PixiJS + React** for a clean 2D MVP; add Three.js only if 3D benefits outweigh complexity.  
+- Keep LLM costs down via **event-triggered activation**, rolling summaries, and **top-k** memory injection.  
+- All actions go through a **tool executor** with validation; LLM cannot “teleport” or bypass constraints.  
+- Prefer **ChromaDB** during development (simple, local); abstract the interface so Pinecone is a drop-in later.  
+- Use **.env** + `pydantic-settings`; never hardcode keys; add a `Makefile` target for `check`, `fmt`, `lint`, `test`.
+
+---
 
 ## 🔒 Ethics & Safety
 - For research and education only — not affiliated with Columbia University.
