@@ -80,7 +80,7 @@ git clone https://github.com/<your-org>/columbia-smallville.git
 cd columbia-smallville
 cp .env.example .env         # Fill in OPENAI_API_KEY or a compatible LLM endpoint
 make setup                   # Or: pip install -r requirements.txt && npm --prefix frontend i
-
+```
 ### 3) Initialize Database
 make db.up        # Start Postgres (or: docker compose up -d db)
 make db.init      # Create tables and pgvector indexes
