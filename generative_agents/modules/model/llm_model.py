@@ -6,6 +6,21 @@ import requests
 
 
 class LLMModel:
+    def safe_json_loads(text):
+        """安全解析 LLM 输出，自动截取 JSON 段"""
+        try:
+            return json.loads(text)
+        except json.JSONDecodeError:
+            # 如果模型输出有多余说明文字，尝试截取 { ... } 部分
+            if "{" in text and "}" in text:
+                try:
+                    json_part = text[text.index("{"): text.rindex("}") + 1]
+                    return json.loads(json_part)
+                except Exception:
+                    pass
+            print(f"[WARN] Non-JSON response:\n{text[:500]}...\n")
+            return {"raw_response": text.strip()}
+
     def __init__(self, config):
         self._api_key = config["api_key"]
         self._base_url = config["base_url"]
@@ -39,9 +54,14 @@ class LLMModel:
                 self._summary["total"][0] += 1
                 self._summary[caller][0] += 1
                 if callback:
-                    response = callback(meta_response)
+                    try:
+                        response = callback(meta_response)
+                    except Exception:
+                        # 尝试安全解析 JSON
+                        response = safe_json_loads(meta_response)
                 else:
-                    response = meta_response
+                    response = safe_json_loads(meta_response)
+
             except Exception as e:
                 print(f"LLMModel.completion() caused an error: {e}")
                 time.sleep(5)
