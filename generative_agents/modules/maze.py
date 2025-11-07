@@ -1,4 +1,4 @@
-"""generative_agents.maze"""
+"""generative_agents.maze — Columbia Smallville compatible version"""
 
 import random
 from itertools import product
@@ -8,15 +8,8 @@ from modules.memory.event import Event
 
 
 class Tile:
-    def __init__(
-        self,
-        coord,
-        world,
-        address_keys,
-        address=None,
-        collision=False,
-    ):
-        # in order: world, sector, arena, game_object
+    def __init__(self, coord, world, address_keys, address=None, collision=False):
+        # world, sector, arena, game_object
         self.coord = coord
         self.address = [world]
         if address:
@@ -34,7 +27,7 @@ class Tile:
         if self.collision:
             address += "(collision)"
         return {
-            "coord[{},{}]".format(self.coord[0], self.coord[1]): address,
+            f"coord[{self.coord[0]},{self.coord[1]}]": address,
             "events": {k: str(v) for k, v in self.events.items()},
         }
 
@@ -45,6 +38,14 @@ class Tile:
         if isinstance(other, Tile):
             return hash(self.coord) == hash(other.coord)
         return False
+
+    @property
+    def events(self):
+        return self._events
+
+    @property
+    def is_empty(self):
+        return len(self.address) == 1 and not self._events
 
     def get_events(self):
         return self.events.values()
@@ -81,84 +82,72 @@ class Tile:
 
     def get_address(self, level=None, as_list=True):
         level = level or self.address_keys[-1]
-        assert level in self.address_keys, "Can not find {} from {}".format(
-            level, self.address_keys
-        )
+        assert level in self.address_keys, f"Can not find {level} from {self.address_keys}"
         pos = self.address_keys.index(level) + 1
         if as_list:
             return self.address[:pos]
         return ":".join(self.address[:pos])
 
     def get_addresses(self):
-        addresses = []
         if len(self.address) > 1:
-            addresses = [
-                ":".join(self.address[:i]) for i in range(2, len(self.address) + 1)
-            ]
-        return addresses
-
-    @property
-    def events(self):
-        return self._events
-
-    @property
-    def is_empty(self):
-        return len(self.address) == 1 and not self._events
+            return [":".join(self.address[:i]) for i in range(2, len(self.address) + 1)]
+        return []
 
 
 class Maze:
+    """兼容 Columbia 简化 maze.json 与原版 full schema"""
+
     def __init__(self, config, logger):
-        # define tiles
-        self.maze_height, self.maze_width = config["size"]
-        self.tile_size = config["tile_size"]
-        address_keys = config["tile_address_keys"]
-        self.tiles = [
-            [
-                Tile((x, y), config["world"], address_keys)
-                for x in range(self.maze_width)
-            ]
-            for y in range(self.maze_height)
-        ]
-        for tile in config["tiles"]:
-            x, y = tile.pop("coord")
-            self.tiles[y][x] = Tile((x, y), config["world"], address_keys, **tile)
-
-        # define address
-        self.address_tiles = dict()
-        for i in range(self.maze_height):
-            for j in range(self.maze_width):
-                for add in self.tile_at([j, i]).get_addresses():
-                    self.address_tiles.setdefault(add, set()).add((j, i))
-
         self.logger = logger
 
-    def find_path(self, src_coord, dst_coord):
-        map = [[0 for _ in range(self.maze_width)] for _ in range(self.maze_height)]
-        frontier, visited = [src_coord], set()
-        map[src_coord[1]][src_coord[0]] = 1
-        while map[dst_coord[1]][dst_coord[0]] == 0:
-            new_frontier = []
-            for f in frontier:
-                for c in self.get_around(f):
-                    if (
-                        0 < c[0] < self.maze_width - 1
-                        and 0 < c[1] < self.maze_height - 1
-                        and map[c[1]][c[0]] == 0
-                        and c not in visited
-                    ):
-                        map[c[1]][c[0]] = map[f[1]][f[0]] + 1
-                        new_frontier.append(c)
-                        visited.add(c)
-            frontier = new_frontier
-        step = map[dst_coord[1]][dst_coord[0]]
-        path = [dst_coord]
-        while step > 1:
-            for c in self.get_around(path[-1]):
-                if map[c[1]][c[0]] == step - 1:
-                    path.append(c)
-                    break
-            step -= 1
-        return path[::-1]
+        # ---- 1) tile 尺寸 ----
+        self.tile_size = (
+            config.get("tile_size")
+            or config.get("tilewidth")
+            or config.get("tileheight")
+            or 32
+        )
+
+        # ---- 2) 尺寸 ----
+        if "size" in config:
+            self.maze_height, self.maze_width = config["size"]
+        elif "maze" in config and config["maze"]:
+            self.maze_height = len(config["maze"])
+            self.maze_width = len(config["maze"][0])
+        else:
+            raise KeyError("maze size missing: provide 'size':[H,W] or a 'maze' grid")
+
+        # ---- 3) address_keys / world 默认值 ----
+        address_keys = config.get("tile_address_keys", ["world", "sector", "arena", "game_object"])
+        world = config.get("world", "Columbia Campus")
+
+        # ---- 4) 初始化 tile 网格 ----
+        self.tiles = [
+            [Tile((x, y), world, address_keys) for x in range(self.maze_width)]
+            for y in range(self.maze_height)
+        ]
+
+        # ---- 5) 根据 maze 网格添加碰撞 ----
+        if "maze" in config and config["maze"]:
+            grid = config["maze"]
+            for y in range(min(self.maze_height, len(grid))):
+                for x in range(min(self.maze_width, len(grid[y]))):
+                    if int(grid[y][x]) == 1:
+                        self.tiles[y][x] = Tile((x, y), world, address_keys, collision=True)
+
+        # ---- 6) 如果存在更详细的 tile 数据，进行覆盖 ----
+        for t in config.get("tiles", []):
+            t = dict(t)
+            x, y = t.pop("coord")
+            self.tiles[y][x] = Tile((x, y), world, address_keys, **t)
+
+        # ---- 7) 地址索引 ----
+        self.address_tiles = {}
+        for i in range(self.maze_height):
+            for j in range(self.maze_width):
+                adds = self.tile_at([j, i]).get_addresses()
+                for add in adds:
+                    self.address_tiles.setdefault(add, set()).add((j, i))
 
     def tile_at(self, coord):
         return self.tiles[coord[1]][coord[0]]
@@ -179,14 +168,8 @@ class Maze:
         coords = []
         vision_r = config["vision_r"]
         if config["mode"] == "box":
-            x_range = [
-                max(coord[0] - vision_r, 0),
-                min(coord[0] + vision_r + 1, self.maze_width),
-            ]
-            y_range = [
-                max(coord[1] - vision_r, 0),
-                min(coord[1] + vision_r + 1, self.maze_height),
-            ]
+            x_range = [max(coord[0] - vision_r, 0), min(coord[0] + vision_r + 1, self.maze_width)]
+            y_range = [max(coord[1] - vision_r, 0), min(coord[1] + vision_r + 1, self.maze_height)]
             coords = list(product(list(range(*x_range)), list(range(*y_range))))
         return [self.tile_at(c) for c in coords]
 
@@ -205,4 +188,45 @@ class Maze:
         addr = ":".join(address)
         if addr in self.address_tiles:
             return self.address_tiles[addr]
-        return random.choice(self.address_tiles.values())
+        # fallback：返回所有可走格子
+        fallback = {
+            (x, y)
+            for y in range(self.maze_height)
+            for x in range(self.maze_width)
+            if not self.tile_at((x, y)).collision
+        }
+        if fallback:
+            return fallback
+        # 极端情况退回全图
+        return {(x, y) for y in range(self.maze_height) for x in range(self.maze_width)}
+
+    def find_path(self, src_coord, dst_coord):
+        """简单 BFS 寻路"""
+        map = [[0 for _ in range(self.maze_width)] for _ in range(self.maze_height)]
+        frontier, visited = [src_coord], set()
+        map[src_coord[1]][src_coord[0]] = 1
+        while map[dst_coord[1]][dst_coord[0]] == 0 and frontier:
+            new_frontier = []
+            for f in frontier:
+                for c in self.get_around(f):
+                    if (
+                        0 <= c[0] < self.maze_width
+                        and 0 <= c[1] < self.maze_height
+                        and map[c[1]][c[0]] == 0
+                        and c not in visited
+                    ):
+                        map[c[1]][c[0]] = map[f[1]][f[0]] + 1
+                        new_frontier.append(c)
+                        visited.add(c)
+            frontier = new_frontier
+        if map[dst_coord[1]][dst_coord[0]] == 0:
+            return [src_coord, dst_coord]
+        step = map[dst_coord[1]][dst_coord[0]]
+        path = [dst_coord]
+        while step > 1:
+            for c in self.get_around(path[-1], no_collision=False):
+                if map[c[1]][c[0]] == step - 1:
+                    path.append(c)
+                    break
+            step -= 1
+        return path[::-1]
