@@ -1,7 +1,7 @@
 from PIL import Image
 import os
 
-BASE_DIR = "/Users/chenjiajun/Downloads/GenerativeAgentsCN-main/generative_agents/frontend/static/assets/Columbia/agents"
+BASE_DIR = "//generative_agents/frontend/static/assets/Columbia/agents"
 
 def convert_texture_to_portrait(agent_dir):
     texture_path = os.path.join(agent_dir, "texture.png")

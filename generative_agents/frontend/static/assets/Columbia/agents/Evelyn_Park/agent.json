@@ -1,9 +1,9 @@
 {
-  "name": "Evelyn Park",
-  "portrait": "assets/Columbia/agents/Evelyn Park/portrait.png",
+  "name": "Evelyn_Park",
+  "portrait": "assets/Columbia/agents/Evelyn_Park/portrait.png",
   "coord": [
-    25,
-    18
+    50,
+    40
   ],
   "currently": "Evelyn is preparing a campus-wide address on research ethics and student well-being.",
   "scratch": {

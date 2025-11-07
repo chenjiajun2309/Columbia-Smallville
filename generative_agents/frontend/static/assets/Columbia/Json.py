@@ -1,14 +1,14 @@
 import os, json, copy
 
 # === 绝对路径：你的 Columbia 资源根目录（与截图一致）===
-COLUMBIA_ROOT = "/Users/chenjiajun/Downloads/GenerativeAgentsCN-main/generative_agents/frontend/static/assets/Columbia"
+COLUMBIA_ROOT = "/Users/chenjiajun/Downloads/ColumbiaSmallville/generative_agents/frontend/static/assets/Columbia"
 AGENTS_DIR = os.path.join(COLUMBIA_ROOT, "agents")
 
 # === 资源包名（决定 agent.json 里 portrait/texture 的相对 URL 前缀）===
 ASSETS_PACK = "Columbia"  # 即 assets/Columbia/...
 
 # === 合并 roster 的输出路径（可选）===
-ROSTER_OUT = "/Users/chenjiajun/Downloads/GenerativeAgentsCN-main/generative_agents/data/rosters/roster.columbia.en.json"
+ROSTER_OUT = "/Users/chenjiajun/Downloads/ColumbiaSmallville/generative_agents/data/rosters/roster.columbia.en.json"
 
 # === 通用的校园空间树（各角色共享，可按需删减/扩展）===
 CAMPUS_TREE = {
@@ -63,7 +63,7 @@ CAMPUS_TREE = {
 # === 12 位 Columbia 角色元信息（坐标为占位；地图完成后再按 Tiled 实际网格调整）===
 AGENTS = [
     {
-        "name": "Evelyn Park",
+        "name": "Evelyn_Park",
         "age": 52,
         "innate": "decisive, diplomatic, visionary",
         "learned": "university governance, fundraising, ethical leadership",
@@ -73,7 +73,7 @@ AGENTS = [
         "living_area": ["Columbia Campus", "Low Library", "Office"]
     },
     {
-        "name": "Marta Lopez",
+        "name": "Marta_Lopez",
         "age": 44,
         "innate": "patient, meticulous, helpful",
         "learned": "information retrieval, academic archiving, data literacy",
@@ -83,7 +83,7 @@ AGENTS = [
         "living_area": ["Columbia Campus", "Butler Library", "Reference Desk"]
     },
     {
-        "name": "Daniel Kim",
+        "name": "Daniel_Kim",
         "age": 41,
         "innate": "curious, analytical, calm",
         "learned": "urban geography, GIS methods, field design",
@@ -93,7 +93,7 @@ AGENTS = [
         "living_area": ["Columbia Campus", "Schermerhorn Hall", "GIS Lab"]
     },
     {
-        "name": "Priya Nair",
+        "name": "Priya_Nair",
         "age": 38,
         "innate": "inventive, disciplined, warm",
         "learned": "human-centered AI, scalable systems",
@@ -103,7 +103,7 @@ AGENTS = [
         "living_area": ["Columbia Campus", "Mudd Hall", "CS Lab"]
     },
     {
-        "name": "Liam OConnor",
+        "name": "Liam_OConnor",
         "age": 45,
         "innate": "logical, precise, slightly eccentric",
         "learned": "graph theory, combinatorics",
@@ -113,7 +113,7 @@ AGENTS = [
         "living_area": ["Columbia Campus", "Math Building", "Classroom 3"]
     },
     {
-        "name": "Grace Chen",
+        "name": "Grace_Chen",
         "age": 47,
         "innate": "empathetic, reflective, articulate",
         "learned": "comparative literature, narrative theory",
@@ -123,7 +123,7 @@ AGENTS = [
         "living_area": ["Columbia Campus", "Humanities Hall", "Seminar Room"]
     },
     {
-        "name": "Noah Patel",
+        "name": "Noah_Patel",
         "age": 36,
         "innate": "diligent, observant, kind",
         "learned": "efficient scheduling, safety procedures",
@@ -133,7 +133,7 @@ AGENTS = [
         "living_area": ["Columbia Campus", "Facilities", "Workshop"]
     },
     {
-        "name": "Jason Wright",
+        "name": "Jason_Wright",
         "age": 35,
         "innate": "alert, fair, composed",
         "learned": "patrol routines, emergency response, first aid",
@@ -143,7 +143,7 @@ AGENTS = [
         "living_area": ["Columbia Campus", "Security Office", "Briefing Room"]
     },
     {
-        "name": "Rosa Martinez",
+        "name": "Rosa_Martinez",
         "age": 41,
         "innate": "energetic, organized, friendly",
         "learned": "inventory and crowd flow optimization",
@@ -153,7 +153,7 @@ AGENTS = [
         "living_area": ["Columbia Campus", "Cafeteria", "Kitchen"]
     },
     {
-        "name": "Ava Lee",
+        "name": "Ava_Lee",
         "age": 20,
         "innate": "curious, collaborative, proactive",
         "learned": "web frameworks and teamwork",
@@ -163,7 +163,7 @@ AGENTS = [
         "living_area": ["Columbia Campus", "Residence Halls", "Dorm A"]
     },
     {
-        "name": "Benjamin Carter",
+        "name": "Benjamin_Carter",
         "age": 24,
         "innate": "methodical, curious, helpful",
         "learned": "statistical modeling, experiment tracking",
@@ -173,7 +173,7 @@ AGENTS = [
         "living_area": ["Columbia Campus", "Mudd Hall", "CS Lab"]
     },
     {
-        "name": "Sophia Rossi",
+        "name": "Sophia_Rossi",
         "age": 21,
         "innate": "outgoing, observant, ethical",
         "learned": "interview techniques and fact checking",
@@ -250,8 +250,8 @@ def main():
     print(f"  📦 roster written: {ROSTER_OUT}")
 
     print("\nAll done. Put/verify your portrait.png & texture.png under each folder, e.g.:")
-    print("  /Users/chenjiajun/Downloads/GenerativeAgentsCN-main/generative_agents/frontend/static/assets/Columbia/agents/Ava Lee/portrait.png")
-    print("  /Users/chenjiajun/Downloads/GenerativeAgentsCN-main/generative_agents/frontend/static/assets/Columbia/agents/Ava Lee/texture.png")
+    print("  /Users/chenjiajun/Downloads/ColumbiaSmallville/generative_agents/frontend/static/assets/Columbia/agents/Ava Lee/portrait.png")
+    print("  /Users/chenjiajun/Downloads/ColumbiaSmallville/generative_agents/frontend/static/assets/Columbia/agents/Ava Lee/texture.png")
 
 if __name__ == "__main__":
     main()

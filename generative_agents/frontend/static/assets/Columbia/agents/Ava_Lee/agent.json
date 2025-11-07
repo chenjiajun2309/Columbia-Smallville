@@ -1,9 +1,9 @@
 {
-  "name": "Ava Lee",
-  "portrait": "assets/Columbia/agents/Ava Lee/portrait.png",
+  "name": "Ava_Lee",
+  "portrait": "assets/Columbia/agents/Ava_Lee/portrait.png",
   "coord": [
-    23,
-    16
+    63,
+    66
   ],
   "currently": "Ava is debugging a web app for her group project.",
   "scratch": {

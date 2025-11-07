@@ -1,9 +1,9 @@
 {
-  "name": "Daniel Kim",
-  "portrait": "assets/Columbia/agents/Daniel Kim/portrait.png",
+  "name": "Daniel_Kim",
+  "portrait": "assets/Columbia/agents/Daniel_Kim/portrait.png",
   "coord": [
-    14,
-    22
+    63,
+    52
   ],
   "currently": "Daniel is preparing a field-mapping exercise on urban heat islands.",
   "scratch": {

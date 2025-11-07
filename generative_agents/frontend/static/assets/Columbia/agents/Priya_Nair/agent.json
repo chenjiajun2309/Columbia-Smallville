@@ -1,9 +1,9 @@
 {
-  "name": "Priya Nair",
-  "portrait": "assets/Columbia/agents/Priya Nair/portrait.png",
+  "name": "Priya_Nair",
+  "portrait": "assets/Columbia/agents/Priya_Nair/portrait.png",
   "coord": [
-    15,
-    14
+    70,
+    38
   ],
   "currently": "Priya is advising a student team on their AI capstone project.",
   "scratch": {

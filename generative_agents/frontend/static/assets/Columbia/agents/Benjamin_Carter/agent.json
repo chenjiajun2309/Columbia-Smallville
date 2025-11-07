@@ -1,9 +1,9 @@
 {
-  "name": "Benjamin Carter",
-  "portrait": "assets/Columbia/agents/Benjamin Carter/portrait.png",
+  "name": "Benjamin_Carter",
+  "portrait": "assets/Columbia/agents/Benjamin_Carter/portrait.png",
   "coord": [
-    32,
-    13
+    64,
+    67
   ],
   "currently": "Benjamin is running experiments for a diffusion model report.",
   "scratch": {

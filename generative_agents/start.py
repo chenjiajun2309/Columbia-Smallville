@@ -28,7 +28,7 @@ personas = [
     "Marta_Lopez",        # Head Librarian
     "Daniel_Kim",         # Professor of Geography
     "Priya_Nair",         # Professor of Computer Science
-    "Liam_O'Connor",      # Professor of Mathematics
+    "Liam_OConnor",      # Professor of Mathematics
     "Grace_Chen",         # Professor of Literature
     "Noah_Patel",         # Custodian
     "Jason_Wright",       # Campus Security Officer

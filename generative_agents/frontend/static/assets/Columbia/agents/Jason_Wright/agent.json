@@ -1,9 +1,9 @@
 {
-  "name": "Jason Wright",
-  "portrait": "assets/Columbia/agents/Jason Wright/portrait.png",
+  "name": "Jason_Wright",
+  "portrait": "assets/Columbia/agents/Jason_Wright/portrait.png",
   "coord": [
-    20,
-    6
+    50,
+    56
   ],
   "currently": "Jason is patrolling the campus plaza and assisting lost visitors.",
   "scratch": {

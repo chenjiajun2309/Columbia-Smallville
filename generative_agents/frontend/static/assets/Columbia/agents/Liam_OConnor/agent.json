@@ -1,9 +1,9 @@
 {
-  "name": "Liam OConnor",
-  "portrait": "assets/Columbia/agents/Liam OConnor/portrait.png",
+  "name": "Liam_OConnor",
+  "portrait": "assets/Columbia/agents/Liam_OConnor/portrait.png",
   "coord": [
-    25,
-    14
+    58,
+    44
   ],
   "currently": "Liam is drafting examples for a proof techniques lecture.",
   "scratch": {

@@ -1,9 +1,9 @@
 {
-  "name": "Grace Chen",
-  "portrait": "assets/Columbia/agents/Grace Chen/portrait.png",
+  "name": "Grace_Chen",
+  "portrait": "assets/Columbia/agents/Grace_Chen/portrait.png",
   "coord": [
-    32,
-    15
+    54,
+    48
   ],
   "currently": "Grace is curating a reading list on modern poetry and identity.",
   "scratch": {

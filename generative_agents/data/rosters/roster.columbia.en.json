@@ -1,7 +1,7 @@
 [
   {
-    "name": "Evelyn Park",
-    "portrait": "assets/Columbia/agents/Evelyn Park/portrait.png",
+    "name": "Evelyn_Park",
+    "portrait": "assets/Columbia/agents/Evelyn_Park/portrait.png",
     "coord": [
       50,
       40
@@ -139,8 +139,8 @@
     }
   },
   {
-    "name": "Marta Lopez",
-    "portrait": "assets/Columbia/agents/Marta Lopez/portrait.png",
+    "name": "Marta_Lopez",
+    "portrait": "assets/Columbia/agents/Marta_Lopez/portrait.png",
     "coord": [
       45,
       58
@@ -278,8 +278,8 @@
     }
   },
   {
-    "name": "Daniel Kim",
-    "portrait": "assets/Columbia/agents/Daniel Kim/portrait.png",
+    "name": "Daniel_Kim",
+    "portrait": "assets/Columbia/agents/Daniel_Kim/portrait.png",
     "coord": [
       63,
       52
@@ -417,8 +417,8 @@
     }
   },
   {
-    "name": "Priya Nair",
-    "portrait": "assets/Columbia/agents/Priya Nair/portrait.png",
+    "name": "Priya_Nair",
+    "portrait": "assets/Columbia/agents/Priya_Nair/portrait.png",
     "coord": [
       70,
       38
@@ -556,8 +556,8 @@
     }
   },
   {
-    "name": "Liam OConnor",
-    "portrait": "assets/Columbia/agents/Liam OConnor/portrait.png",
+    "name": "Liam_OConnor",
+    "portrait": "assets/Columbia/agents/Liam_OConnor/portrait.png",
     "coord": [
       58,
       44
@@ -695,8 +695,8 @@
     }
   },
   {
-    "name": "Grace Chen",
-    "portrait": "assets/Columbia/agents/Grace Chen/portrait.png",
+    "name": "Grace_Chen",
+    "portrait": "assets/Columbia/agents/Grace_Chen/portrait.png",
     "coord": [
       54,
       48
@@ -834,8 +834,8 @@
     }
   },
   {
-    "name": "Noah Patel",
-    "portrait": "assets/Columbia/agents/Noah Patel/portrait.png",
+    "name": "Noah_Patel",
+    "portrait": "assets/Columbia/agents/Noah_Patel/portrait.png",
     "coord": [
       54,
       60
@@ -973,8 +973,8 @@
     }
   },
   {
-    "name": "Jason Wright",
-    "portrait": "assets/Columbia/agents/Jason Wright/portrait.png",
+    "name": "Jason_Wright",
+    "portrait": "assets/Columbia/agents/Jason_Wright/portrait.png",
     "coord": [
       50,
       56
@@ -1112,8 +1112,8 @@
     }
   },
   {
-    "name": "Rosa Martinez",
-    "portrait": "assets/Columbia/agents/Rosa Martinez/portrait.png",
+    "name": "Rosa_Martinez",
+    "portrait": "assets/Columbia/agents/Rosa_Martinez/portrait.png",
     "coord": [
       46,
       62
@@ -1251,8 +1251,8 @@
     }
   },
   {
-    "name": "Ava Lee",
-    "portrait": "assets/Columbia/agents/Ava Lee/portrait.png",
+    "name": "Ava_Lee",
+    "portrait": "assets/Columbia/agents/Ava_Lee/portrait.png",
     "coord": [
       63,
       66
@@ -1390,8 +1390,8 @@
     }
   },
   {
-    "name": "Benjamin Carter",
-    "portrait": "assets/Columbia/agents/Benjamin Carter/portrait.png",
+    "name": "Benjamin_Carter",
+    "portrait": "assets/Columbia/agents/Benjamin_Carter/portrait.png",
     "coord": [
       64,
       67
@@ -1529,8 +1529,8 @@
     }
   },
   {
-    "name": "Sophia Rossi",
-    "portrait": "assets/Columbia/agents/Sophia Rossi/portrait.png",
+    "name": "Sophia_Rossi",
+    "portrait": "assets/Columbia/agents/Sophia_Rossi/portrait.png",
     "coord": [
       56,
       66

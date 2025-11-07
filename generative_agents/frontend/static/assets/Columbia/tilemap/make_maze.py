@@ -1,7 +1,7 @@
 import json, math, os
 
-TILEMAP_JSON = "/Users/chenjiajun/Downloads/GenerativeAgentsCN-main/generative_agents/frontend/static/assets/Columbia/tilemap/tilemap.json"
-MAZE_OUT     = "/Users/chenjiajun/Downloads/GenerativeAgentsCN-main/generative_agents/frontend/static/assets/Columbia/maze.json"
+TILEMAP_JSON = "/Users/chenjiajun/Downloads/ColumbiaSmallville/generative_agents/frontend/static/assets/Columbia/tilemap/tilemap.json"
+MAZE_OUT     = "/Users/chenjiajun/Downloads/ColumbiaSmallville/generative_agents/frontend/static/assets/Columbia/maze.json"
 
 m = json.load(open(TILEMAP_JSON, "r", encoding="utf-8"))
 tw, th = m["tilewidth"], m["tileheight"]

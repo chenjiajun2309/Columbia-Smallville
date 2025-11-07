@@ -9,51 +9,51 @@
   "agents": [
     {
       "name": "Evelyn_Park",
-      "texture": "assets/Columbia/agents/Evelyn Park/texture.png"
+      "texture": "assets/Columbia/agents/Evelyn_Park/texture.png"
     },
     {
       "name": "Marta_Lopez",
-      "texture": "assets/Columbia/agents/Marta Lopez/texture.png"
+      "texture": "assets/Columbia/agents/Marta_Lopez/texture.png"
     },
     {
       "name": "Daniel_Kim",
-      "texture": "assets/Columbia/agents/Daniel Kim/texture.png"
+      "texture": "assets/Columbia/agents/Daniel_Kim/texture.png"
     },
     {
       "name": "Priya_Nair",
-      "texture": "assets/Columbia/agents/Priya Nair/texture.png"
+      "texture": "assets/Columbia/agents/Priya_Nair/texture.png"
     },
     {
       "name": "Liam_OConnor",
-      "texture": "assets/Columbia/agents/Liam OConnor/texture.png"
+      "texture": "assets/Columbia/agents/Liam_OConnor/texture.png"
     },
     {
       "name": "Grace_Chen",
-      "texture": "assets/Columbia/agents/Grace Chen/texture.png"
+      "texture": "assets/Columbia/agents/Grace_Chen/texture.png"
     },
     {
       "name": "Noah_Patel",
-      "texture": "assets/Columbia/agents/Noah Patel/texture.png"
+      "texture": "assets/Columbia/agents/Noah_Patel/texture.png"
     },
     {
       "name": "Jason_Wright",
-      "texture": "assets/Columbia/agents/Jason Wright/texture.png"
+      "texture": "assets/Columbia/agents/Jason_Wright/texture.png"
     },
     {
       "name": "Rosa_Martinez",
-      "texture": "assets/Columbia/agents/Rosa Martinez/texture.png"
+      "texture": "assets/Columbia/agents/Rosa_Martinez/texture.png"
     },
     {
       "name": "Ava_Lee",
-      "texture": "assets/Columbia/agents/Ava Lee/texture.png"
+      "texture": "assets/Columbia/agents/Ava_Lee/texture.png"
     },
     {
       "name": "Benjamin_Carter",
-      "texture": "assets/Columbia/agents/Benjamin Carter/texture.png"
+      "texture": "assets/Columbia/agents/Benjamin_Carter/texture.png"
     },
     {
       "name": "Sophia_Rossi",
-      "texture": "assets/Columbia/agents/Sophia Rossi/texture.png"
+      "texture": "assets/Columbia/agents/Sophia_Rossi/texture.png"
     }
   ]
 }

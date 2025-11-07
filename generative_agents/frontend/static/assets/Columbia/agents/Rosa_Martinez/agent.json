@@ -1,9 +1,9 @@
 {
-  "name": "Rosa Martinez",
-  "portrait": "assets/Columbia/agents/Rosa Martinez/portrait.png",
+  "name": "Rosa_Martinez",
+  "portrait": "assets/Columbia/agents/Rosa_Martinez/portrait.png",
   "coord": [
-    30,
-    22
+    46,
+    62
   ],
   "currently": "Rosa is planning a healthy menu and managing the lunch rush.",
   "scratch": {

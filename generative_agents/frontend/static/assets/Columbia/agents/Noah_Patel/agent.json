@@ -1,9 +1,9 @@
 {
-  "name": "Noah Patel",
-  "portrait": "assets/Columbia/agents/Noah Patel/portrait.png",
+  "name": "Noah_Patel",
+  "portrait": "assets/Columbia/agents/Noah_Patel/portrait.png",
   "coord": [
-    12,
-    11
+    54,
+    60
   ],
   "currently": "Noah is checking maintenance requests and cleaning common areas.",
   "scratch": {

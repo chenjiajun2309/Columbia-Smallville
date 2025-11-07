@@ -1,9 +1,9 @@
 {
-  "name": "Sophia Rossi",
-  "portrait": "assets/Columbia/agents/Sophia Rossi/portrait.png",
+  "name": "Sophia_Rossi",
+  "portrait": "assets/Columbia/agents/Sophia_Rossi/portrait.png",
   "coord": [
-    8,
-    9
+    56,
+    66
   ],
   "currently": "Sophia is interviewing students about study habits at the plaza.",
   "scratch": {

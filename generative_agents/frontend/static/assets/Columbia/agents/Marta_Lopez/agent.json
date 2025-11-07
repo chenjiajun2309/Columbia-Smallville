@@ -1,9 +1,9 @@
 {
-  "name": "Marta Lopez",
-  "portrait": "assets/Columbia/agents/Marta Lopez/portrait.png",
+  "name": "Marta_Lopez",
+  "portrait": "assets/Columbia/agents/Marta_Lopez/portrait.png",
   "coord": [
-    25,
-    8
+    45,
+    58
   ],
   "currently": "Marta is organizing a data literacy workshop at Butler Library.",
   "scratch": {

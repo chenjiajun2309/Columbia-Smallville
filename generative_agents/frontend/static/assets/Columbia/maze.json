@@ -2,8 +2,8 @@
   "tilewidth": 32,
   "tileheight": 32,
   "size": [
-    30,
-    40
+    80,
+    80
   ],
   "maze": [
     [
