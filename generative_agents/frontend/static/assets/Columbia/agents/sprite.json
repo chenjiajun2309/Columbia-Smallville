@@ -8,51 +8,51 @@
   ],
   "agents": [
     {
-      "name": "Evelyn Park",
+      "name": "Evelyn_Park",
       "texture": "assets/Columbia/agents/Evelyn Park/texture.png"
     },
     {
-      "name": "Marta Lopez",
+      "name": "Marta_Lopez",
       "texture": "assets/Columbia/agents/Marta Lopez/texture.png"
     },
     {
-      "name": "Daniel Kim",
+      "name": "Daniel_Kim",
       "texture": "assets/Columbia/agents/Daniel Kim/texture.png"
     },
     {
-      "name": "Priya Nair",
+      "name": "Priya_Nair",
       "texture": "assets/Columbia/agents/Priya Nair/texture.png"
     },
     {
-      "name": "Liam OConnor",
+      "name": "Liam_OConnor",
       "texture": "assets/Columbia/agents/Liam OConnor/texture.png"
     },
     {
-      "name": "Grace Chen",
+      "name": "Grace_Chen",
       "texture": "assets/Columbia/agents/Grace Chen/texture.png"
     },
     {
-      "name": "Noah Patel",
+      "name": "Noah_Patel",
       "texture": "assets/Columbia/agents/Noah Patel/texture.png"
     },
     {
-      "name": "Jason Wright",
+      "name": "Jason_Wright",
       "texture": "assets/Columbia/agents/Jason Wright/texture.png"
     },
     {
-      "name": "Rosa Martinez",
+      "name": "Rosa_Martinez",
       "texture": "assets/Columbia/agents/Rosa Martinez/texture.png"
     },
     {
-      "name": "Ava Lee",
+      "name": "Ava_Lee",
       "texture": "assets/Columbia/agents/Ava Lee/texture.png"
     },
     {
-      "name": "Benjamin Carter",
+      "name": "Benjamin_Carter",
       "texture": "assets/Columbia/agents/Benjamin Carter/texture.png"
     },
     {
-      "name": "Sophia Rossi",
+      "name": "Sophia_Rossi",
       "texture": "assets/Columbia/agents/Sophia Rossi/texture.png"
     }
   ]

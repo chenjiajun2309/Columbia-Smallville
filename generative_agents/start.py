@@ -24,18 +24,18 @@ from generative_agents.modules import utils
 
 # ---------- your 12 Columbia agents (EN) ----------
 personas = [
-    "Evelyn Park",        # University President
-    "Marta Lopez",        # Head Librarian
-    "Daniel Kim",         # Professor of Geography
-    "Priya Nair",         # Professor of Computer Science
-    "Liam O'Connor",      # Professor of Mathematics
-    "Grace Chen",         # Professor of Literature
-    "Noah Patel",         # Custodian
-    "Jason Wright",       # Campus Security Officer
-    "Rosa Martinez",      # Cafeteria Manager
-    "Ava Lee",            # Undergraduate (CS)
-    "Benjamin Carter",    # Graduate (Data Science)
-    "Sophia Rossi",       # Undergraduate (Journalism)
+    "Evelyn_Park",        # University President
+    "Marta_Lopez",        # Head Librarian
+    "Daniel_Kim",         # Professor of Geography
+    "Priya_Nair",         # Professor of Computer Science
+    "Liam_O'Connor",      # Professor of Mathematics
+    "Grace_Chen",         # Professor of Literature
+    "Noah_Patel",         # Custodian
+    "Jason_Wright",       # Campus Security Officer
+    "Rosa_Martinez",      # Cafeteria Manager
+    "Ava_Lee",            # Undergraduate (CS)
+    "Benjamin_Carter",    # Graduate (Data Science)
+    "Sophia_Rossi",       # Undergraduate (Journalism)
 ]
 
 
@@ -135,8 +135,9 @@ def get_config_from_log(checkpoints_folder):
     config["time"] = {"start": start_time.strftime("%Y%m%d-%H:%M")}
     agents = config["agents"]
     for a in agents:
-        config["agents"][a]["config_path"] = os.path.join(assets_root, "agents", a.replace(" ", "_"), "agent.json")
-
+        config["agents"][a]["config_path"] = os.path.join(
+            "assets/Columbia/agents", a.replace(" ", "_"), "agent.json"
+        )
     return config
 
 
@@ -160,7 +161,7 @@ def get_config(start_time="20240213-09:30", stride=15, agents=None):
         # Columbia/agents/<Name with underscore>/agent.json
         config["agents"][a] = {
             "config_path": os.path.join(
-                assets_root, "agents", a.replace(" ", "_"), "agent.json"
+                "assets/Columbia/agents", a.replace(" ", "_"), "agent.json"
             ),
         }
     return config
