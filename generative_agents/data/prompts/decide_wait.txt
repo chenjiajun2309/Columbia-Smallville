@@ -1,0 +1,15 @@
+Context:
+"""
+${context}
+Today is ${date}.
+${status}
+${agent} observes ${another_status}
+"""
+
+Question (Columbia campus norms apply: quiet hours in Butler Reading Rooms, lab access windows, class start times, office hours):
+Think step by step: Should ${agent} wait or act now?
+
+Option A: Wait for ${another} to finish ${another_action}, then ${action}
+Option B: Proceed to ${action} now
+
+${reason}${answer}

@@ -1,0 +1,19 @@
+This is ${agent}’s original schedule from ${start} to ${end}:
+"""
+${original_plan}
+"""
+
+But ${agent} spent an extra ${duration} minutes due to the event below:
+"""
+${event}
+"""
+
+Please revise ${agent}’s schedule from ${start} to ${end}.
+
+Revised schedule:
+"""
+${new_plan}
+"""
+
+Continue writing the remaining part of the schedule (it must finish before ${end}):
+

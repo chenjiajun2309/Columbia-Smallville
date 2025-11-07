@@ -1,0 +1,24 @@
+Brief profile of ${agent}:
+${base_desc}
+
+Memory of ${agent}:
+${memory}
+
+Current address: ${address}
+Current time: ${current_time}
+
+${previous_context}${current_context}
+${agent} starts a conversation with ${another}. The dialogue so far:
+<Dialogue>
+${conversation}
+</Dialogue>
+
+<Rule>
+${agent} MUST NOT repeat any content already present in <Dialogue>.
+</Rule>
+
+Based on <Dialogue> and the <Rule>, what will ${agent} say to ${another} now?
+Output EXACTLY the following JSON (no extra text):
+{
+  "${agent}": <what ${agent} says>
+}

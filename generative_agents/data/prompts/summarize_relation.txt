@@ -1,0 +1,10 @@
+Background:
+"""
+${context}
+"""
+
+Sample outputs:
+Output 1: Joe and Tom are friends.
+Output 2: Irene and John are playing a game.
+
+Following the background and the samples above, summarize the relationship between ${agent} and ${another} in one sentence:

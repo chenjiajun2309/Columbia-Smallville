@@ -1,0 +1,6 @@
+Dialogue:
+"""
+${conversation}
+"""
+
+From ${agent}’s perspective, in ONE sentence, state whether ${agent} needs to remember their plan after this dialogue.

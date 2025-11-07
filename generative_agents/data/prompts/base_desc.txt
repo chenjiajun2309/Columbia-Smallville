@@ -1,0 +1,12 @@
+Name: ${name}
+Age: ${age}
+Innate Traits: ${innate}
+Learned Traits: ${learned}
+Lifestyle: ${lifestyle}
+Daily Plan: ${daily_plan}
+
+Today is ${date}. ${currently}
+
+Campus anchors (optional, if known): Low Library, Butler Library, Mudd (CS), Schermerhorn (Geo), Lerner Hall, Residence Halls, Campus Plaza.
+
+Use concise English suitable for simulation prompts.

@@ -1,0 +1,11 @@
+Reference:
+"""
+${reference}
+"""
+
+From the reference above, extract ${number} high-level insights and cite the related reference line numbers for each.
+Each line MUST contain exactly one insight (≤ 50 characters) and a parenthetical list of reference indices.
+
+Format:
+1. <insight> (refs 2,3,5)
+

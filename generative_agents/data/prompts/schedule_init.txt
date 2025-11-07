@@ -1,0 +1,13 @@
+"""
+${base_desc}
+
+Usually, ${lifestyle}
+Below is ${agent}’s rough plan for today (each item must include a time, e.g., “7:00 breakfast”, “12:00 lunch”, “19:00 watch TV”):
+1. Wake up at ${wake_up}
+2.
+3.
+......
+"""
+
+Based on the information above, output today’s plan. Each line must contain exactly one index and one item.
+Format: 1. <plan>

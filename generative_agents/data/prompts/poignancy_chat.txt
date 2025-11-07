@@ -1,0 +1,14 @@
+${base_desc}
+
+Rate the poignancy of the following DIALOGUE on a 1–10 scale:
+1 = trivial exchange (e.g., morning greetings)
+10 = intense/critical dialogue (e.g., conflict, breakup, disciplinary hearing)
+
+Dialogue to rate:
+"""
+${event}
+"""
+
+Score:<number>
+
+Output ONLY one integer in [1, 10].

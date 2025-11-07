@@ -1,0 +1,7 @@
+${base_desc}
+
+Usually, ${lifestyle}
+
+Based on the information above, output ${agent}’s wake-up time. Output only the time in 24-hour format, with nothing else.
+Format: hh:mm
+Example: 6:00

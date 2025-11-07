@@ -1,0 +1,17 @@
+Pick the best AREA inside the target sector for the current task in a Columbia campus setting.
+
+${agent} is heading to <${target_sector}>, which contains: ${target_arenas}.
+${daily_plan}
+
+Question:
+${agent} is ${complete_plan}. To accomplish ${decomposed_plan}, which area inside <${target_sector}> should ${agent} choose?
+
+Campus considerations:
+- Prefer appropriate campus spaces: e.g., study tasks → Butler Library (Reading Room), CS work → Mudd/CS Lab, governance → Low Library offices, dining → Ferris/Lerner.
+- Respect norms: quiet zones (Butler Reading Rooms), lab access (keycard), room capacity, open hours.
+- If the **current area** is in the list and fits the task, prefer staying to reduce travel.
+
+Requirements:
+1) Choose exactly ONE from this list: [${target_arenas}].
+2) Do NOT pick outside the list.
+3) Output ONLY the chosen area (no explanations).

@@ -1,0 +1,12 @@
+<Dialogue>
+${conversation}
+</Dialogue>
+
+<Rules>
+- If the last line is a question, the dialogue is NOT finished.
+- If the last line asks for help or feedback, the dialogue is NOT finished.
+- If the last line explicitly invites continued discussion, the dialogue is NOT finished.
+</Rules>
+
+Based on <Dialogue> and <Rules>, has the conversation between ${agent} and ${another} concluded?
+Answer ONLY “Yes” or “No”:

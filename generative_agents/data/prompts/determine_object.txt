@@ -1,0 +1,10 @@
+Select the single most relevant OBJECT for the current activity.
+
+Current activity: ${activity}
+
+Requirements:
+1) You MUST choose exactly one object from this list: [${objects}].
+2) Do NOT choose anything outside the list.
+3) Output ONLY the chosen object.
+
+The most relevant object is:

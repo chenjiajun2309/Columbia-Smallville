@@ -1,0 +1,24 @@
+Convert the input into (subject, verb, object), using concise English.
+
+Examples:
+Input: Sam is eating breakfast.
+Output: (<Sam>, <eat>, <breakfast>)
+
+Input: Michael is brewing coffee.
+Output: (<Michael>, <brew>, <coffee>)
+
+Input: Cook is sleeping.
+Output: (<Cook>, <sleep>, <—>)
+
+Input: Michael writes emails on a computer.
+Output: (<Michael>, <write>, <emails>)
+
+Input: Percy teaches students in a classroom.
+Output: (<Percy>, <teach>, <students>)
+
+Input: Mary runs on a treadmill.
+Output: (<Mary>, <run>, <treadmill>)
+
+Now convert this campus action:
+Input: ${action}
+Output:

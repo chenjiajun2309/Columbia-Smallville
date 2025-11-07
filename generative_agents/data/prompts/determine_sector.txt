@@ -1,0 +1,16 @@
+Choose the most suitable AREA for the current task.
+
+${agent} lives in <${live_sector}>, which contains ${live_arenas}.
+${agent} is currently in <${current_sector}>, which contains ${current_arenas}.
+${daily_plan}
+
+Question:
+${agent} is ${complete_plan}. To accomplish ${decomposed_plan}, where should ${agent} go?
+
+Requirements:
+1) You MUST choose exactly one area from this list: [${areas}].
+2) If the current area is in the list and the plan can be done here, prefer staying.
+3) Do NOT choose anything outside the list.
+4) Output ONLY the chosen area.
+
+${agent} should go to:

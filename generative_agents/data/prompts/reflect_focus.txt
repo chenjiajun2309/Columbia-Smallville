@@ -1,0 +1,10 @@
+Reference:
+"""
+${reference}
+"""
+
+Based on the reference above, propose ${number} of the highest-quality, research-level questions relevant to the Columbia campus setting (teaching, research, facilities, student life).
+Each line MUST contain exactly one numbered question.
+
+Format:
+1. <question>

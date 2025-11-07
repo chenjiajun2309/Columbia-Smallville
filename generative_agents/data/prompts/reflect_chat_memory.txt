@@ -1,0 +1,6 @@
+Dialogue:
+"""
+${conversation}
+"""
+
+From ${agent}’s perspective, describe in ONE sentence the most interesting point in the conversation (considering campus life, classes, labs, events, or facilities).

@@ -1,0 +1,21 @@
+Map the action to ≤3 emojis. Prefer campus-relevant icons when possible.
+
+Examples:
+Action: Wake up and start morning routine (shower)
+Emoji: 🛁🧖
+
+Action: Breakfast (brew coffee)
+Emoji: ☕️🥐
+
+Action: Painting (while listening to classical music)
+Emoji: 🎨🎵
+
+Action: Workout (running)
+Emoji: 🏃
+
+Action: Breakfast (butter toast)
+Emoji: 🧈🍞
+
+Now map this Columbia-campus action:
+Action: ${action}
+Emoji:

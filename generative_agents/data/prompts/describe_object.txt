@@ -1,0 +1,19 @@
+Task: In ≤10 words, describe the state of the object near the person—within a Columbia campus context.
+
+Examples:
+Step 1. Sam is eating breakfast next to <oven>.
+Step 2. Describe <oven>.
+Output: <oven> preheating for breakfast
+
+Step 1. Mike is writing emails on the <computer>.
+Step 2. Describe <computer>.
+Output: <computer> in use for email
+
+Step 1. Tom is washing at the <sink>.
+Step 2. Describe <sink>.
+Output: <sink> running water
+
+Now follow the pattern for Columbia:
+Step 1. ${agent} is ${action} near <${object}> (e.g., Butler scanner, Mudd 2F lab workstation, Lerner info desk).
+Step 2. Describe <${object}>.
+Output:

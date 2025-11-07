@@ -1,0 +1,13 @@
+Background:
+"""
+${context}
+
+Today is ${date}. ${chat_history}
+
+${agent_status}
+${another_status}
+"""
+
+Considering campus etiquette (e.g., keep voice low in Butler Reading Rooms, avoid interrupting during lectures/labs, casual chat in Lerner/Campus Plaza is fine):  
+Can ${agent} proactively start a conversation with ${another} now?  
+Answer ONLY “Yes” or “No”:

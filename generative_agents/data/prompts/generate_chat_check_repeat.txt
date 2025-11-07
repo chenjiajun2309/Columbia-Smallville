@@ -1,0 +1,9 @@
+<Dialogue History>
+${conversation}
+</Dialogue History>
+
+<New Utterance>
+${content}
+</New Utterance>
+
+Did ${agent}’s line in <New Utterance> already appear in the <Dialogue History>? Answer with ONLY “Yes” or “No”.

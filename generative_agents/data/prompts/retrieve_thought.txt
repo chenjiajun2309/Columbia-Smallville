@@ -1,0 +1,5 @@
+"""
+${description}
+"""
+
+Based on the content above, from ${agent}’s perspective, summarize in one sentence what ${agent} is thinking and feeling at this moment:

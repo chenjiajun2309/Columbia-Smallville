@@ -1,0 +1,8 @@
+"""
+${description}
+"""
+
+Given the content above, what should ${agent} remember when making plans for ${date}?
+From ${agent}’s perspective, describe the most important things to remember; if there are any scheduling details, be as specific as possible (including time and location).
+Each line must contain exactly one index and one item.
+Format: 1. <item>

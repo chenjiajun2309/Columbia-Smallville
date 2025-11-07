@@ -1,0 +1,1670 @@
+[
+  {
+    "name": "Evelyn Park",
+    "portrait": "assets/Columbia/agents/Evelyn Park/portrait.png",
+    "coord": [
+      50,
+      40
+    ],
+    "currently": "Evelyn is preparing a campus-wide address on research ethics and student well-being.",
+    "scratch": {
+      "age": 52,
+      "innate": "decisive, diplomatic, visionary",
+      "learned": "university governance, fundraising, ethical leadership",
+      "lifestyle": "early meetings; midday campus walks; late policy reviews",
+      "daily_plan": ""
+    },
+    "spatial": {
+      "address": {
+        "living_area": [
+          "Columbia Campus",
+          "Low Library",
+          "Office"
+        ]
+      },
+      "tree": {
+        "Columbia Campus": {
+          "Low Library": {
+            "Office": [
+              "desk",
+              "meeting table",
+              "bookshelf"
+            ],
+            "Lobby": [
+              "info desk",
+              "map"
+            ]
+          },
+          "Butler Library": {
+            "Reading Room": [
+              "tables",
+              "stacks",
+              "circulation desk"
+            ],
+            "Reference Desk": [
+              "counter",
+              "computer"
+            ]
+          },
+          "Mudd Hall": {
+            "CS Lab": [
+              "workstations",
+              "whiteboard",
+              "servers"
+            ],
+            "Office": [
+              "desk",
+              "bookshelf"
+            ]
+          },
+          "Schermerhorn Hall": {
+            "GIS Lab": [
+              "workstations",
+              "maps"
+            ],
+            "Classroom": [
+              "podium",
+              "seats"
+            ]
+          },
+          "Math Building": {
+            "Classroom 3": [
+              "blackboard",
+              "desks"
+            ]
+          },
+          "Humanities Hall": {
+            "Seminar Room": [
+              "circle chairs",
+              "projector"
+            ]
+          },
+          "Lerner Hall": {
+            "Student Center": [
+              "lobby",
+              "auditorium"
+            ]
+          },
+          "Residence Halls": {
+            "Dorm A": [
+              "rooms",
+              "common area"
+            ],
+            "Dorm B": [
+              "rooms",
+              "laundry"
+            ]
+          },
+          "Cafeteria": {
+            "Kitchen": [
+              "stoves",
+              "prep tables"
+            ],
+            "Serving Line": [
+              "counter",
+              "trays"
+            ]
+          },
+          "Security Office": {
+            "Briefing Room": [
+              "desk",
+              "radio",
+              "logbook"
+            ],
+            "Locker Room": [
+              "uniform rack",
+              "storage"
+            ]
+          },
+          "Facilities": {
+            "Workshop": [
+              "tools",
+              "storage"
+            ]
+          },
+          "Journalism School": {
+            "Newsroom": [
+              "desks",
+              "studio"
+            ]
+          },
+          "Campus Plaza": {
+            "Plaza": [
+              "benches",
+              "fountain"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Marta Lopez",
+    "portrait": "assets/Columbia/agents/Marta Lopez/portrait.png",
+    "coord": [
+      45,
+      58
+    ],
+    "currently": "Marta is organizing a data literacy workshop at Butler Library.",
+    "scratch": {
+      "age": 44,
+      "innate": "patient, meticulous, helpful",
+      "learned": "information retrieval, academic archiving, data literacy",
+      "lifestyle": "opens Butler in the morning; community events in the evening",
+      "daily_plan": ""
+    },
+    "spatial": {
+      "address": {
+        "living_area": [
+          "Columbia Campus",
+          "Butler Library",
+          "Reference Desk"
+        ]
+      },
+      "tree": {
+        "Columbia Campus": {
+          "Low Library": {
+            "Office": [
+              "desk",
+              "meeting table",
+              "bookshelf"
+            ],
+            "Lobby": [
+              "info desk",
+              "map"
+            ]
+          },
+          "Butler Library": {
+            "Reading Room": [
+              "tables",
+              "stacks",
+              "circulation desk"
+            ],
+            "Reference Desk": [
+              "counter",
+              "computer"
+            ]
+          },
+          "Mudd Hall": {
+            "CS Lab": [
+              "workstations",
+              "whiteboard",
+              "servers"
+            ],
+            "Office": [
+              "desk",
+              "bookshelf"
+            ]
+          },
+          "Schermerhorn Hall": {
+            "GIS Lab": [
+              "workstations",
+              "maps"
+            ],
+            "Classroom": [
+              "podium",
+              "seats"
+            ]
+          },
+          "Math Building": {
+            "Classroom 3": [
+              "blackboard",
+              "desks"
+            ]
+          },
+          "Humanities Hall": {
+            "Seminar Room": [
+              "circle chairs",
+              "projector"
+            ]
+          },
+          "Lerner Hall": {
+            "Student Center": [
+              "lobby",
+              "auditorium"
+            ]
+          },
+          "Residence Halls": {
+            "Dorm A": [
+              "rooms",
+              "common area"
+            ],
+            "Dorm B": [
+              "rooms",
+              "laundry"
+            ]
+          },
+          "Cafeteria": {
+            "Kitchen": [
+              "stoves",
+              "prep tables"
+            ],
+            "Serving Line": [
+              "counter",
+              "trays"
+            ]
+          },
+          "Security Office": {
+            "Briefing Room": [
+              "desk",
+              "radio",
+              "logbook"
+            ],
+            "Locker Room": [
+              "uniform rack",
+              "storage"
+            ]
+          },
+          "Facilities": {
+            "Workshop": [
+              "tools",
+              "storage"
+            ]
+          },
+          "Journalism School": {
+            "Newsroom": [
+              "desks",
+              "studio"
+            ]
+          },
+          "Campus Plaza": {
+            "Plaza": [
+              "benches",
+              "fountain"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Daniel Kim",
+    "portrait": "assets/Columbia/agents/Daniel Kim/portrait.png",
+    "coord": [
+      63,
+      52
+    ],
+    "currently": "Daniel is preparing a field-mapping exercise on urban heat islands.",
+    "scratch": {
+      "age": 41,
+      "innate": "curious, analytical, calm",
+      "learned": "urban geography, GIS methods, field design",
+      "lifestyle": "morning lectures; afternoon labs; evening walks",
+      "daily_plan": ""
+    },
+    "spatial": {
+      "address": {
+        "living_area": [
+          "Columbia Campus",
+          "Schermerhorn Hall",
+          "GIS Lab"
+        ]
+      },
+      "tree": {
+        "Columbia Campus": {
+          "Low Library": {
+            "Office": [
+              "desk",
+              "meeting table",
+              "bookshelf"
+            ],
+            "Lobby": [
+              "info desk",
+              "map"
+            ]
+          },
+          "Butler Library": {
+            "Reading Room": [
+              "tables",
+              "stacks",
+              "circulation desk"
+            ],
+            "Reference Desk": [
+              "counter",
+              "computer"
+            ]
+          },
+          "Mudd Hall": {
+            "CS Lab": [
+              "workstations",
+              "whiteboard",
+              "servers"
+            ],
+            "Office": [
+              "desk",
+              "bookshelf"
+            ]
+          },
+          "Schermerhorn Hall": {
+            "GIS Lab": [
+              "workstations",
+              "maps"
+            ],
+            "Classroom": [
+              "podium",
+              "seats"
+            ]
+          },
+          "Math Building": {
+            "Classroom 3": [
+              "blackboard",
+              "desks"
+            ]
+          },
+          "Humanities Hall": {
+            "Seminar Room": [
+              "circle chairs",
+              "projector"
+            ]
+          },
+          "Lerner Hall": {
+            "Student Center": [
+              "lobby",
+              "auditorium"
+            ]
+          },
+          "Residence Halls": {
+            "Dorm A": [
+              "rooms",
+              "common area"
+            ],
+            "Dorm B": [
+              "rooms",
+              "laundry"
+            ]
+          },
+          "Cafeteria": {
+            "Kitchen": [
+              "stoves",
+              "prep tables"
+            ],
+            "Serving Line": [
+              "counter",
+              "trays"
+            ]
+          },
+          "Security Office": {
+            "Briefing Room": [
+              "desk",
+              "radio",
+              "logbook"
+            ],
+            "Locker Room": [
+              "uniform rack",
+              "storage"
+            ]
+          },
+          "Facilities": {
+            "Workshop": [
+              "tools",
+              "storage"
+            ]
+          },
+          "Journalism School": {
+            "Newsroom": [
+              "desks",
+              "studio"
+            ]
+          },
+          "Campus Plaza": {
+            "Plaza": [
+              "benches",
+              "fountain"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Priya Nair",
+    "portrait": "assets/Columbia/agents/Priya Nair/portrait.png",
+    "coord": [
+      70,
+      38
+    ],
+    "currently": "Priya is advising a student team on their AI capstone project.",
+    "scratch": {
+      "age": 38,
+      "innate": "inventive, disciplined, warm",
+      "learned": "human-centered AI, scalable systems",
+      "lifestyle": "code review after lunch; office hours at 4 PM",
+      "daily_plan": ""
+    },
+    "spatial": {
+      "address": {
+        "living_area": [
+          "Columbia Campus",
+          "Mudd Hall",
+          "CS Lab"
+        ]
+      },
+      "tree": {
+        "Columbia Campus": {
+          "Low Library": {
+            "Office": [
+              "desk",
+              "meeting table",
+              "bookshelf"
+            ],
+            "Lobby": [
+              "info desk",
+              "map"
+            ]
+          },
+          "Butler Library": {
+            "Reading Room": [
+              "tables",
+              "stacks",
+              "circulation desk"
+            ],
+            "Reference Desk": [
+              "counter",
+              "computer"
+            ]
+          },
+          "Mudd Hall": {
+            "CS Lab": [
+              "workstations",
+              "whiteboard",
+              "servers"
+            ],
+            "Office": [
+              "desk",
+              "bookshelf"
+            ]
+          },
+          "Schermerhorn Hall": {
+            "GIS Lab": [
+              "workstations",
+              "maps"
+            ],
+            "Classroom": [
+              "podium",
+              "seats"
+            ]
+          },
+          "Math Building": {
+            "Classroom 3": [
+              "blackboard",
+              "desks"
+            ]
+          },
+          "Humanities Hall": {
+            "Seminar Room": [
+              "circle chairs",
+              "projector"
+            ]
+          },
+          "Lerner Hall": {
+            "Student Center": [
+              "lobby",
+              "auditorium"
+            ]
+          },
+          "Residence Halls": {
+            "Dorm A": [
+              "rooms",
+              "common area"
+            ],
+            "Dorm B": [
+              "rooms",
+              "laundry"
+            ]
+          },
+          "Cafeteria": {
+            "Kitchen": [
+              "stoves",
+              "prep tables"
+            ],
+            "Serving Line": [
+              "counter",
+              "trays"
+            ]
+          },
+          "Security Office": {
+            "Briefing Room": [
+              "desk",
+              "radio",
+              "logbook"
+            ],
+            "Locker Room": [
+              "uniform rack",
+              "storage"
+            ]
+          },
+          "Facilities": {
+            "Workshop": [
+              "tools",
+              "storage"
+            ]
+          },
+          "Journalism School": {
+            "Newsroom": [
+              "desks",
+              "studio"
+            ]
+          },
+          "Campus Plaza": {
+            "Plaza": [
+              "benches",
+              "fountain"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Liam OConnor",
+    "portrait": "assets/Columbia/agents/Liam OConnor/portrait.png",
+    "coord": [
+      58,
+      44
+    ],
+    "currently": "Liam is drafting examples for a proof techniques lecture.",
+    "scratch": {
+      "age": 45,
+      "innate": "logical, precise, slightly eccentric",
+      "learned": "graph theory, combinatorics",
+      "lifestyle": "coffee, chalk, and long blackboard sessions",
+      "daily_plan": ""
+    },
+    "spatial": {
+      "address": {
+        "living_area": [
+          "Columbia Campus",
+          "Math Building",
+          "Classroom 3"
+        ]
+      },
+      "tree": {
+        "Columbia Campus": {
+          "Low Library": {
+            "Office": [
+              "desk",
+              "meeting table",
+              "bookshelf"
+            ],
+            "Lobby": [
+              "info desk",
+              "map"
+            ]
+          },
+          "Butler Library": {
+            "Reading Room": [
+              "tables",
+              "stacks",
+              "circulation desk"
+            ],
+            "Reference Desk": [
+              "counter",
+              "computer"
+            ]
+          },
+          "Mudd Hall": {
+            "CS Lab": [
+              "workstations",
+              "whiteboard",
+              "servers"
+            ],
+            "Office": [
+              "desk",
+              "bookshelf"
+            ]
+          },
+          "Schermerhorn Hall": {
+            "GIS Lab": [
+              "workstations",
+              "maps"
+            ],
+            "Classroom": [
+              "podium",
+              "seats"
+            ]
+          },
+          "Math Building": {
+            "Classroom 3": [
+              "blackboard",
+              "desks"
+            ]
+          },
+          "Humanities Hall": {
+            "Seminar Room": [
+              "circle chairs",
+              "projector"
+            ]
+          },
+          "Lerner Hall": {
+            "Student Center": [
+              "lobby",
+              "auditorium"
+            ]
+          },
+          "Residence Halls": {
+            "Dorm A": [
+              "rooms",
+              "common area"
+            ],
+            "Dorm B": [
+              "rooms",
+              "laundry"
+            ]
+          },
+          "Cafeteria": {
+            "Kitchen": [
+              "stoves",
+              "prep tables"
+            ],
+            "Serving Line": [
+              "counter",
+              "trays"
+            ]
+          },
+          "Security Office": {
+            "Briefing Room": [
+              "desk",
+              "radio",
+              "logbook"
+            ],
+            "Locker Room": [
+              "uniform rack",
+              "storage"
+            ]
+          },
+          "Facilities": {
+            "Workshop": [
+              "tools",
+              "storage"
+            ]
+          },
+          "Journalism School": {
+            "Newsroom": [
+              "desks",
+              "studio"
+            ]
+          },
+          "Campus Plaza": {
+            "Plaza": [
+              "benches",
+              "fountain"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Grace Chen",
+    "portrait": "assets/Columbia/agents/Grace Chen/portrait.png",
+    "coord": [
+      54,
+      48
+    ],
+    "currently": "Grace is curating a reading list on modern poetry and identity.",
+    "scratch": {
+      "age": 47,
+      "innate": "empathetic, reflective, articulate",
+      "learned": "comparative literature, narrative theory",
+      "lifestyle": "seminars in late morning; readings at the plaza",
+      "daily_plan": ""
+    },
+    "spatial": {
+      "address": {
+        "living_area": [
+          "Columbia Campus",
+          "Humanities Hall",
+          "Seminar Room"
+        ]
+      },
+      "tree": {
+        "Columbia Campus": {
+          "Low Library": {
+            "Office": [
+              "desk",
+              "meeting table",
+              "bookshelf"
+            ],
+            "Lobby": [
+              "info desk",
+              "map"
+            ]
+          },
+          "Butler Library": {
+            "Reading Room": [
+              "tables",
+              "stacks",
+              "circulation desk"
+            ],
+            "Reference Desk": [
+              "counter",
+              "computer"
+            ]
+          },
+          "Mudd Hall": {
+            "CS Lab": [
+              "workstations",
+              "whiteboard",
+              "servers"
+            ],
+            "Office": [
+              "desk",
+              "bookshelf"
+            ]
+          },
+          "Schermerhorn Hall": {
+            "GIS Lab": [
+              "workstations",
+              "maps"
+            ],
+            "Classroom": [
+              "podium",
+              "seats"
+            ]
+          },
+          "Math Building": {
+            "Classroom 3": [
+              "blackboard",
+              "desks"
+            ]
+          },
+          "Humanities Hall": {
+            "Seminar Room": [
+              "circle chairs",
+              "projector"
+            ]
+          },
+          "Lerner Hall": {
+            "Student Center": [
+              "lobby",
+              "auditorium"
+            ]
+          },
+          "Residence Halls": {
+            "Dorm A": [
+              "rooms",
+              "common area"
+            ],
+            "Dorm B": [
+              "rooms",
+              "laundry"
+            ]
+          },
+          "Cafeteria": {
+            "Kitchen": [
+              "stoves",
+              "prep tables"
+            ],
+            "Serving Line": [
+              "counter",
+              "trays"
+            ]
+          },
+          "Security Office": {
+            "Briefing Room": [
+              "desk",
+              "radio",
+              "logbook"
+            ],
+            "Locker Room": [
+              "uniform rack",
+              "storage"
+            ]
+          },
+          "Facilities": {
+            "Workshop": [
+              "tools",
+              "storage"
+            ]
+          },
+          "Journalism School": {
+            "Newsroom": [
+              "desks",
+              "studio"
+            ]
+          },
+          "Campus Plaza": {
+            "Plaza": [
+              "benches",
+              "fountain"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Noah Patel",
+    "portrait": "assets/Columbia/agents/Noah Patel/portrait.png",
+    "coord": [
+      54,
+      60
+    ],
+    "currently": "Noah is checking maintenance requests and cleaning common areas.",
+    "scratch": {
+      "age": 36,
+      "innate": "diligent, observant, kind",
+      "learned": "efficient scheduling, safety procedures",
+      "lifestyle": "early rounds across classrooms and corridors",
+      "daily_plan": ""
+    },
+    "spatial": {
+      "address": {
+        "living_area": [
+          "Columbia Campus",
+          "Facilities",
+          "Workshop"
+        ]
+      },
+      "tree": {
+        "Columbia Campus": {
+          "Low Library": {
+            "Office": [
+              "desk",
+              "meeting table",
+              "bookshelf"
+            ],
+            "Lobby": [
+              "info desk",
+              "map"
+            ]
+          },
+          "Butler Library": {
+            "Reading Room": [
+              "tables",
+              "stacks",
+              "circulation desk"
+            ],
+            "Reference Desk": [
+              "counter",
+              "computer"
+            ]
+          },
+          "Mudd Hall": {
+            "CS Lab": [
+              "workstations",
+              "whiteboard",
+              "servers"
+            ],
+            "Office": [
+              "desk",
+              "bookshelf"
+            ]
+          },
+          "Schermerhorn Hall": {
+            "GIS Lab": [
+              "workstations",
+              "maps"
+            ],
+            "Classroom": [
+              "podium",
+              "seats"
+            ]
+          },
+          "Math Building": {
+            "Classroom 3": [
+              "blackboard",
+              "desks"
+            ]
+          },
+          "Humanities Hall": {
+            "Seminar Room": [
+              "circle chairs",
+              "projector"
+            ]
+          },
+          "Lerner Hall": {
+            "Student Center": [
+              "lobby",
+              "auditorium"
+            ]
+          },
+          "Residence Halls": {
+            "Dorm A": [
+              "rooms",
+              "common area"
+            ],
+            "Dorm B": [
+              "rooms",
+              "laundry"
+            ]
+          },
+          "Cafeteria": {
+            "Kitchen": [
+              "stoves",
+              "prep tables"
+            ],
+            "Serving Line": [
+              "counter",
+              "trays"
+            ]
+          },
+          "Security Office": {
+            "Briefing Room": [
+              "desk",
+              "radio",
+              "logbook"
+            ],
+            "Locker Room": [
+              "uniform rack",
+              "storage"
+            ]
+          },
+          "Facilities": {
+            "Workshop": [
+              "tools",
+              "storage"
+            ]
+          },
+          "Journalism School": {
+            "Newsroom": [
+              "desks",
+              "studio"
+            ]
+          },
+          "Campus Plaza": {
+            "Plaza": [
+              "benches",
+              "fountain"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Jason Wright",
+    "portrait": "assets/Columbia/agents/Jason Wright/portrait.png",
+    "coord": [
+      50,
+      56
+    ],
+    "currently": "Jason is patrolling the campus plaza and assisting lost visitors.",
+    "scratch": {
+      "age": 35,
+      "innate": "alert, fair, composed",
+      "learned": "patrol routines, emergency response, first aid",
+      "lifestyle": "rotating shifts; peak patrol in evenings",
+      "daily_plan": ""
+    },
+    "spatial": {
+      "address": {
+        "living_area": [
+          "Columbia Campus",
+          "Security Office",
+          "Briefing Room"
+        ]
+      },
+      "tree": {
+        "Columbia Campus": {
+          "Low Library": {
+            "Office": [
+              "desk",
+              "meeting table",
+              "bookshelf"
+            ],
+            "Lobby": [
+              "info desk",
+              "map"
+            ]
+          },
+          "Butler Library": {
+            "Reading Room": [
+              "tables",
+              "stacks",
+              "circulation desk"
+            ],
+            "Reference Desk": [
+              "counter",
+              "computer"
+            ]
+          },
+          "Mudd Hall": {
+            "CS Lab": [
+              "workstations",
+              "whiteboard",
+              "servers"
+            ],
+            "Office": [
+              "desk",
+              "bookshelf"
+            ]
+          },
+          "Schermerhorn Hall": {
+            "GIS Lab": [
+              "workstations",
+              "maps"
+            ],
+            "Classroom": [
+              "podium",
+              "seats"
+            ]
+          },
+          "Math Building": {
+            "Classroom 3": [
+              "blackboard",
+              "desks"
+            ]
+          },
+          "Humanities Hall": {
+            "Seminar Room": [
+              "circle chairs",
+              "projector"
+            ]
+          },
+          "Lerner Hall": {
+            "Student Center": [
+              "lobby",
+              "auditorium"
+            ]
+          },
+          "Residence Halls": {
+            "Dorm A": [
+              "rooms",
+              "common area"
+            ],
+            "Dorm B": [
+              "rooms",
+              "laundry"
+            ]
+          },
+          "Cafeteria": {
+            "Kitchen": [
+              "stoves",
+              "prep tables"
+            ],
+            "Serving Line": [
+              "counter",
+              "trays"
+            ]
+          },
+          "Security Office": {
+            "Briefing Room": [
+              "desk",
+              "radio",
+              "logbook"
+            ],
+            "Locker Room": [
+              "uniform rack",
+              "storage"
+            ]
+          },
+          "Facilities": {
+            "Workshop": [
+              "tools",
+              "storage"
+            ]
+          },
+          "Journalism School": {
+            "Newsroom": [
+              "desks",
+              "studio"
+            ]
+          },
+          "Campus Plaza": {
+            "Plaza": [
+              "benches",
+              "fountain"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Rosa Martinez",
+    "portrait": "assets/Columbia/agents/Rosa Martinez/portrait.png",
+    "coord": [
+      46,
+      62
+    ],
+    "currently": "Rosa is planning a healthy menu and managing the lunch rush.",
+    "scratch": {
+      "age": 41,
+      "innate": "energetic, organized, friendly",
+      "learned": "inventory and crowd flow optimization",
+      "lifestyle": "early prep; busy noon service",
+      "daily_plan": ""
+    },
+    "spatial": {
+      "address": {
+        "living_area": [
+          "Columbia Campus",
+          "Cafeteria",
+          "Kitchen"
+        ]
+      },
+      "tree": {
+        "Columbia Campus": {
+          "Low Library": {
+            "Office": [
+              "desk",
+              "meeting table",
+              "bookshelf"
+            ],
+            "Lobby": [
+              "info desk",
+              "map"
+            ]
+          },
+          "Butler Library": {
+            "Reading Room": [
+              "tables",
+              "stacks",
+              "circulation desk"
+            ],
+            "Reference Desk": [
+              "counter",
+              "computer"
+            ]
+          },
+          "Mudd Hall": {
+            "CS Lab": [
+              "workstations",
+              "whiteboard",
+              "servers"
+            ],
+            "Office": [
+              "desk",
+              "bookshelf"
+            ]
+          },
+          "Schermerhorn Hall": {
+            "GIS Lab": [
+              "workstations",
+              "maps"
+            ],
+            "Classroom": [
+              "podium",
+              "seats"
+            ]
+          },
+          "Math Building": {
+            "Classroom 3": [
+              "blackboard",
+              "desks"
+            ]
+          },
+          "Humanities Hall": {
+            "Seminar Room": [
+              "circle chairs",
+              "projector"
+            ]
+          },
+          "Lerner Hall": {
+            "Student Center": [
+              "lobby",
+              "auditorium"
+            ]
+          },
+          "Residence Halls": {
+            "Dorm A": [
+              "rooms",
+              "common area"
+            ],
+            "Dorm B": [
+              "rooms",
+              "laundry"
+            ]
+          },
+          "Cafeteria": {
+            "Kitchen": [
+              "stoves",
+              "prep tables"
+            ],
+            "Serving Line": [
+              "counter",
+              "trays"
+            ]
+          },
+          "Security Office": {
+            "Briefing Room": [
+              "desk",
+              "radio",
+              "logbook"
+            ],
+            "Locker Room": [
+              "uniform rack",
+              "storage"
+            ]
+          },
+          "Facilities": {
+            "Workshop": [
+              "tools",
+              "storage"
+            ]
+          },
+          "Journalism School": {
+            "Newsroom": [
+              "desks",
+              "studio"
+            ]
+          },
+          "Campus Plaza": {
+            "Plaza": [
+              "benches",
+              "fountain"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Ava Lee",
+    "portrait": "assets/Columbia/agents/Ava Lee/portrait.png",
+    "coord": [
+      63,
+      66
+    ],
+    "currently": "Ava is debugging a web app for her group project.",
+    "scratch": {
+      "age": 20,
+      "innate": "curious, collaborative, proactive",
+      "learned": "web frameworks and teamwork",
+      "lifestyle": "morning classes; afternoon group study",
+      "daily_plan": ""
+    },
+    "spatial": {
+      "address": {
+        "living_area": [
+          "Columbia Campus",
+          "Residence Halls",
+          "Dorm A"
+        ]
+      },
+      "tree": {
+        "Columbia Campus": {
+          "Low Library": {
+            "Office": [
+              "desk",
+              "meeting table",
+              "bookshelf"
+            ],
+            "Lobby": [
+              "info desk",
+              "map"
+            ]
+          },
+          "Butler Library": {
+            "Reading Room": [
+              "tables",
+              "stacks",
+              "circulation desk"
+            ],
+            "Reference Desk": [
+              "counter",
+              "computer"
+            ]
+          },
+          "Mudd Hall": {
+            "CS Lab": [
+              "workstations",
+              "whiteboard",
+              "servers"
+            ],
+            "Office": [
+              "desk",
+              "bookshelf"
+            ]
+          },
+          "Schermerhorn Hall": {
+            "GIS Lab": [
+              "workstations",
+              "maps"
+            ],
+            "Classroom": [
+              "podium",
+              "seats"
+            ]
+          },
+          "Math Building": {
+            "Classroom 3": [
+              "blackboard",
+              "desks"
+            ]
+          },
+          "Humanities Hall": {
+            "Seminar Room": [
+              "circle chairs",
+              "projector"
+            ]
+          },
+          "Lerner Hall": {
+            "Student Center": [
+              "lobby",
+              "auditorium"
+            ]
+          },
+          "Residence Halls": {
+            "Dorm A": [
+              "rooms",
+              "common area"
+            ],
+            "Dorm B": [
+              "rooms",
+              "laundry"
+            ]
+          },
+          "Cafeteria": {
+            "Kitchen": [
+              "stoves",
+              "prep tables"
+            ],
+            "Serving Line": [
+              "counter",
+              "trays"
+            ]
+          },
+          "Security Office": {
+            "Briefing Room": [
+              "desk",
+              "radio",
+              "logbook"
+            ],
+            "Locker Room": [
+              "uniform rack",
+              "storage"
+            ]
+          },
+          "Facilities": {
+            "Workshop": [
+              "tools",
+              "storage"
+            ]
+          },
+          "Journalism School": {
+            "Newsroom": [
+              "desks",
+              "studio"
+            ]
+          },
+          "Campus Plaza": {
+            "Plaza": [
+              "benches",
+              "fountain"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Benjamin Carter",
+    "portrait": "assets/Columbia/agents/Benjamin Carter/portrait.png",
+    "coord": [
+      64,
+      67
+    ],
+    "currently": "Benjamin is running experiments for a diffusion model report.",
+    "scratch": {
+      "age": 24,
+      "innate": "methodical, curious, helpful",
+      "learned": "statistical modeling, experiment tracking",
+      "lifestyle": "late-night coding; afternoon seminars",
+      "daily_plan": ""
+    },
+    "spatial": {
+      "address": {
+        "living_area": [
+          "Columbia Campus",
+          "Mudd Hall",
+          "CS Lab"
+        ]
+      },
+      "tree": {
+        "Columbia Campus": {
+          "Low Library": {
+            "Office": [
+              "desk",
+              "meeting table",
+              "bookshelf"
+            ],
+            "Lobby": [
+              "info desk",
+              "map"
+            ]
+          },
+          "Butler Library": {
+            "Reading Room": [
+              "tables",
+              "stacks",
+              "circulation desk"
+            ],
+            "Reference Desk": [
+              "counter",
+              "computer"
+            ]
+          },
+          "Mudd Hall": {
+            "CS Lab": [
+              "workstations",
+              "whiteboard",
+              "servers"
+            ],
+            "Office": [
+              "desk",
+              "bookshelf"
+            ]
+          },
+          "Schermerhorn Hall": {
+            "GIS Lab": [
+              "workstations",
+              "maps"
+            ],
+            "Classroom": [
+              "podium",
+              "seats"
+            ]
+          },
+          "Math Building": {
+            "Classroom 3": [
+              "blackboard",
+              "desks"
+            ]
+          },
+          "Humanities Hall": {
+            "Seminar Room": [
+              "circle chairs",
+              "projector"
+            ]
+          },
+          "Lerner Hall": {
+            "Student Center": [
+              "lobby",
+              "auditorium"
+            ]
+          },
+          "Residence Halls": {
+            "Dorm A": [
+              "rooms",
+              "common area"
+            ],
+            "Dorm B": [
+              "rooms",
+              "laundry"
+            ]
+          },
+          "Cafeteria": {
+            "Kitchen": [
+              "stoves",
+              "prep tables"
+            ],
+            "Serving Line": [
+              "counter",
+              "trays"
+            ]
+          },
+          "Security Office": {
+            "Briefing Room": [
+              "desk",
+              "radio",
+              "logbook"
+            ],
+            "Locker Room": [
+              "uniform rack",
+              "storage"
+            ]
+          },
+          "Facilities": {
+            "Workshop": [
+              "tools",
+              "storage"
+            ]
+          },
+          "Journalism School": {
+            "Newsroom": [
+              "desks",
+              "studio"
+            ]
+          },
+          "Campus Plaza": {
+            "Plaza": [
+              "benches",
+              "fountain"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Sophia Rossi",
+    "portrait": "assets/Columbia/agents/Sophia Rossi/portrait.png",
+    "coord": [
+      56,
+      66
+    ],
+    "currently": "Sophia is interviewing students about study habits at the plaza.",
+    "scratch": {
+      "age": 21,
+      "innate": "outgoing, observant, ethical",
+      "learned": "interview techniques and fact checking",
+      "lifestyle": "reporting in afternoons; editing in evenings",
+      "daily_plan": ""
+    },
+    "spatial": {
+      "address": {
+        "living_area": [
+          "Columbia Campus",
+          "Journalism School",
+          "Newsroom"
+        ]
+      },
+      "tree": {
+        "Columbia Campus": {
+          "Low Library": {
+            "Office": [
+              "desk",
+              "meeting table",
+              "bookshelf"
+            ],
+            "Lobby": [
+              "info desk",
+              "map"
+            ]
+          },
+          "Butler Library": {
+            "Reading Room": [
+              "tables",
+              "stacks",
+              "circulation desk"
+            ],
+            "Reference Desk": [
+              "counter",
+              "computer"
+            ]
+          },
+          "Mudd Hall": {
+            "CS Lab": [
+              "workstations",
+              "whiteboard",
+              "servers"
+            ],
+            "Office": [
+              "desk",
+              "bookshelf"
+            ]
+          },
+          "Schermerhorn Hall": {
+            "GIS Lab": [
+              "workstations",
+              "maps"
+            ],
+            "Classroom": [
+              "podium",
+              "seats"
+            ]
+          },
+          "Math Building": {
+            "Classroom 3": [
+              "blackboard",
+              "desks"
+            ]
+          },
+          "Humanities Hall": {
+            "Seminar Room": [
+              "circle chairs",
+              "projector"
+            ]
+          },
+          "Lerner Hall": {
+            "Student Center": [
+              "lobby",
+              "auditorium"
+            ]
+          },
+          "Residence Halls": {
+            "Dorm A": [
+              "rooms",
+              "common area"
+            ],
+            "Dorm B": [
+              "rooms",
+              "laundry"
+            ]
+          },
+          "Cafeteria": {
+            "Kitchen": [
+              "stoves",
+              "prep tables"
+            ],
+            "Serving Line": [
+              "counter",
+              "trays"
+            ]
+          },
+          "Security Office": {
+            "Briefing Room": [
+              "desk",
+              "radio",
+              "logbook"
+            ],
+            "Locker Room": [
+              "uniform rack",
+              "storage"
+            ]
+          },
+          "Facilities": {
+            "Workshop": [
+              "tools",
+              "storage"
+            ]
+          },
+          "Journalism School": {
+            "Newsroom": [
+              "desks",
+              "studio"
+            ]
+          },
+          "Campus Plaza": {
+            "Plaza": [
+              "benches",
+              "fountain"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

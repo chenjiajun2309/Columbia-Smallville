@@ -1,0 +1,14 @@
+${base_desc}
+
+Rate the poignancy of the following EVENT on a 1–10 scale:
+1 = very ordinary campus routine (e.g., brushing teeth, making bed)
+10 = highly impactful campus milestone (e.g., acceptance/expulsion, breakup, major award)
+
+Event to rate:
+"""
+${event}
+"""
+
+Score:<number>
+
+Output ONLY one integer in [1, 10].

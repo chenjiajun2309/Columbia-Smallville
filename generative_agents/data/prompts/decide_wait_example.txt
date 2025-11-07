@@ -1,0 +1,10 @@
+Example 1:
+${examples_1}
+
+Example 2:
+${examples_2}
+
+Given the examples, which option best fits this campus task?
+${task}
+
+Output ONLY the final answer label (e.g., “Option A” or “Option B”). No reasoning.
