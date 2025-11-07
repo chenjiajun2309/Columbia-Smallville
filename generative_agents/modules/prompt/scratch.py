@@ -15,7 +15,7 @@ class Scratch:
         self.name = name
         self.currently = currently
         self.config = config
-        self.template_path = "data/prompts"
+        self.template_path = "/Users/chenjiajun/Downloads/ColumbiaSmallville/generative_agents/data/prompts"
 
     def build_prompt(self, template, data):
         with open(f"{self.template_path}/{template}.txt", "r", encoding="utf-8") as file:
